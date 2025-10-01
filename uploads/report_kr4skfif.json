@@ -1,0 +1,28 @@
+{
+  "filename": "qno1.cpp",
+  "language": "C++",
+  "timestamp": "2025-09-27T12:59:38.992933Z",
+  "scores": {
+    "lines": 84,
+    "comments": 1,
+    "comment_ratio": 1,
+    "complexity": 100,
+    "review_score": 40,
+    "test_score": 1,
+    "doc_score": 10,
+    "ux_score": 100,
+    "overall": 35,
+    "estimated_coverage": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "int n1=0;n2=0;n3=0;n4=0;n5=0;n6=0;n7=0;n8=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n9=0;n",
+  "tests": "list1, list2, list2,list2, list1, list2, list2,list1, list2, list2,list2, list1, list2,list2, list1, list2, list2,list1, list2, list2,list2, list1, list2,list2, list1, list2,list2, list1, list2,list",
+  "docs": "list2=NULL; //return head oflist1=NULL; //return head oflist2=NULL; //return head oflist2=NULL; //return head oflist1=NULL; //return head oflist2=NULL; //return head oflist2=NULL; //return head oflist1=NULL; //return head oflist2=NULL; //return head oflist2=NULL; //return"
+}

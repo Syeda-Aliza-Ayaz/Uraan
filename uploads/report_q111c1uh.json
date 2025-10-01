@@ -1,0 +1,55 @@
+{
+  "filename": "ConstantTime.java",
+  "language": "Java",
+  "timestamp": "2025-09-29T18:13:28.929009Z",
+  "scores": {
+    "lines": 9,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 60,
+    "test_score": 4,
+    "doc_score": 35,
+    "ux_score": 100,
+    "overall": 48,
+    "estimated_coverage": 0,
+    "structure_score": 22,
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "syntax_errors": 0,
+        "performance_issues": 0,
+        "logic_errors": 0,
+        "runtime_errors": 0,
+        "security_issues": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 0,
+      "severity": "Low"
+    },
+    "quality_level": "Low"
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "public static voidSystem.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(",
+  "tests": "public static voidSystem.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(",
+  "docs": "System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst(arr));System.out.println(getFirst",
+  "bug_report": null,
+  "corrected_code": null
+}

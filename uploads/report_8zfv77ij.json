@@ -1,0 +1,28 @@
+{
+  "filename": "pattern.cpp",
+  "language": "C++",
+  "timestamp": "2025-09-25T12:41:59.723956Z",
+  "scores": {
+    "lines": 18,
+    "comments": 1,
+    "comment_ratio": 5,
+    "complexity": 10,
+    "review_score": 40,
+    "test_score": 1,
+    "doc_score": 12,
+    "ux_score": 100,
+    "overall": 35,
+    "estimated_coverage": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "cout << \"Floyd's Triangle ofcout << \"Floyd's Triangle.\" <<<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<<<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<<<< \"<< \"<< \"<< \"",
+  "tests": "cout << \"Floyd's Triangle of<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<<<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"<< \"",
+  "docs": "cout << \"Floyd's Triangle of<< endl;= 0; i < rows;cout << \"Floyd's Triangle of<< \"<< endl;cout << \"Floyd's Triangle of<< \"<< endl;cout << \"Floyd's Triangle of<< \"<< endl;cout << \"Floyd's Triangle of"
+}

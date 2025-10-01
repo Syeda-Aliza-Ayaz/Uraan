@@ -1,0 +1,28 @@
+{
+  "filename": "app.py",
+  "language": "Python",
+  "timestamp": "2025-09-25T12:20:53.830889Z",
+  "scores": {
+    "lines": 18,
+    "comments": 2,
+    "comment_ratio": 11,
+    "complexity": 10,
+    "review_score": 100,
+    "test_score": 10,
+    "doc_score": 65,
+    "ux_score": 100,
+    "overall": 69,
+    "estimated_coverage": 3
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "3) Code fixexamples, 4) Code fixexamples, 5) Code fixexamples, 4) Code fixexamples, 5) Code fix examples,examples, 4) Code fixexamples, 5) Code fix examples,examples, 4) Code fixexamples, 5) Code fix examples,examples, 4) Code fixexamples, 5) Code fixexamples, 4) Code fixexamples, 5) Code fix examples,",
+  "tests": "test_add(self):\n            self.assertEqual(add(2, 3), 5)\n           test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual(add(2, 3), 5)self.assertEqual(add(-1, 1), 0)test_add(self):\n            self.assertEqual(",
+  "docs": "test_add(self):\n            self.assertEqual(add(-1, 1), 0)test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual(add(2, 3),5)\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual"
+}

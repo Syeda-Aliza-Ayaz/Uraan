@@ -1,0 +1,28 @@
+{
+  "filename": "AddNumbers.java",
+  "language": "Java",
+  "timestamp": "2025-09-26T05:54:29.831046Z",
+  "scores": {
+    "lines": 8,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 40,
+    "test_score": 10,
+    "doc_score": 50,
+    "ux_score": 100,
+    "overall": 47,
+    "estimated_coverage": 8
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "public static voidSystem.out.println(\"The sum of+ a + \"+ b + \" is:System.out.println(\"The sum of \"+ a + \"+ b + \" is:System.out.println(\"The sum of \"+ b + \" is:System.out.println(\"The sum of \"+ a + \" is:System.out.println(\"The sum of \"+",
+  "tests": "public static voidSystem.out.println(\"The sum of+ a + \"+ b);\n\nSystem.out.println(\"The sum of+ b);\n\nSystem.out.println(\"The sum of+ a + \"+ b);\n\nSystem.out.println(\"The sum of \"+ b);\n\nSystem.out.println(\"The sum of+ a);\n\nSystem.",
+  "docs": "public static voidSystem.out.println(\"The sum of+ a + \"+ b);\n\nSystem.out.println(\"The sum of \"+ a + \"+ b);\n\nSystem.out.println(\"The sum of \"+ b);\n\nSystem.out.println(\"The sum of \"+ a + \"+ b);\n\nSystem.out.println(\"The sum of \""
+}

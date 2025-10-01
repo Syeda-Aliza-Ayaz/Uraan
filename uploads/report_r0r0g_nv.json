@@ -1,0 +1,54 @@
+{
+  "filename": "qno1.py",
+  "language": "Python",
+  "timestamp": "2025-09-29T03:45:25.489750Z",
+  "scores": {
+    "lines": 18,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 35,
+    "review_score": 40,
+    "test_score": 20,
+    "doc_score": 100,
+    "ux_score": 100,
+    "overall": 62,
+    "estimated_coverage": 16.67,
+    "tests_run": 0,
+    "tests_failed": 0,
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 0,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 0
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "syntax_errors": 0,
+        "logic_errors": 0,
+        "runtime_errors": 0,
+        "security_issues": 0,
+        "performance_issues": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 100,
+      "severity": "Low"
+    },
+    "quality_level": "Low"
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "= input(\"Entercity name: \").strip()\n   if city:\n        get_weather(city)if city:\nprint(\"Please enter a valid cityif city:\nprint(\"Please enter a validcity name. Try again later.\")\n= input(\"Enter city name: \").strip()\nif city:\nif city:\ninput(\"Enter city name: \").strip()\n",
+  "tests": "= input(\"Entercity name: \").strip()\n   if city:\n        get_weather(city)\n   if city:\n        get_weather(city)\n   else:\nCTYPE print(\"Couldn't fetch weather. Trylater.\")\nSURFACE except Exception as e:\nSURFACEe:\nSURFACE print(\"Error:\", e)\nSURFACE exceptException as e:\nSURFACE",
+  "docs": "= input(\"Entercity name: \").strip()\n   if city:\n        get_weather(city)\n   if city:\ninput(\"Enter city name: \").strip()\n   if city:\ninput(\"Enter city name: \").strip()\n   if city:\ninput(\"Enter city name: \").strip()\nif city:\ninput(\"Enter city name: \").strip"
+}

@@ -1,0 +1,28 @@
+{
+  "filename": "1.cpp",
+  "language": "C++",
+  "timestamp": "2025-09-25T15:36:10.398594Z",
+  "scores": {
+    "lines": 78,
+    "comments": 1,
+    "comment_ratio": 1,
+    "complexity": 70,
+    "review_score": 40,
+    "test_score": 1,
+    "doc_score": 10,
+    "ux_score": 100,
+    "overall": 35,
+    "estimated_coverage": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "= 0; i < row;= 0; i < col;= 0; i < col;= 0; i < col;= 0; i < row;= 0; i < col;= 0; i < col;= 0; i <= 0; i < col;= 0; i < col;= 0; i < col;= 0; i < col;= 0;",
+  "tests": "= 0; i < row;= 0; i < col;= 0; i < col;= 0; i <= 0; i < col;= 0; i < row;= 0; i < col;= 0; i <= 0; i < col;= 0; i < col;= 0; i < col;= 0; i < col;= 0; i <",
+  "docs": "= 0; i < row;= 0; i < col;= 0; i < col;= 0; i <= 0; i < col;= 0; i < row;= 0; i < col;= 0; i <= 0; i < col;= 0; i < col;= 0; i < col;= 0; i < col;= 0; i <"
+}

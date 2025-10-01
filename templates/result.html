@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="result-box">
+    <h2>✅ Analysis Result</h2>
+    <p><b>File:</b> {{ filename }}</p>
+    <p><b>Language:</b> {{ lang }}</p>
+    <p><b>Analysis:</b></p>
+    <pre>{{ result }}</pre>
+
+    <a href="{{ url_for('index') }}" class="back-btn">⬅️ Analyse Another File</a>
+</div>
+
+{% endblock %}

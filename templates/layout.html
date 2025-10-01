@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="CodeAI Pakistan - Advanced AI-powered code analysis, automated testing, and documentation generation for professional developers." />
+    <meta name="keywords" content="code analysis, AI testing, automated documentation, code quality, software development" />
+    <meta name="author" content="CodeAI Pakistan" />
+    <title>CodeAI Pakistan — Quality & Automated Tests</title>
+    
+    <!-- Inline SVG favicon to avoid 404s without needing a file -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232dd4bf'/%3E%3Ctext x='32' y='38' font-size='28' text-anchor='middle' fill='%23081021' font-family='Arial, sans-serif'%3EC%3C/text%3E%3C/svg%3E" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{{ url_for('static', filename='style.css') }}?v=3" as="style">
+    <link rel="preload" href="{{ url_for('static', filename='script.js') }}?v=2" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+    
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='script.js') }}?v=2" defer></script>
+</head>
+
+<body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="app-shell">
+        <header class="topbar" role="banner">
+            <div class="brand">
+                <img src="{{ url_for('static', filename='logo.jpeg') }}" 
+                     alt="CodeAI Pakistan Logo - AI-powered code analysis platform" 
+                     class="logo-image"
+                     width="64" 
+                     height="64">
+                <div class="brand-text">
+                    <h1>CodeAI Pakistan</h1>
+                    <p class="sub">Automated review • Test-gen • Documentation • Reports</p>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" class="main" role="main">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <small>Powered by Transformers • Demo analytics • Created for professional workflows</small>
+        </footer>
+    </div>
+</body>
+
+</html>

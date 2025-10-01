@@ -1,0 +1,30 @@
+{
+  "filename": "app.py",
+  "language": "Python",
+  "timestamp": "2025-09-25T12:43:51.975105Z",
+  "scores": {
+    "lines": 18,
+    "comments": 2,
+    "comment_ratio": 11,
+    "complexity": 10,
+    "review_score": 40,
+    "test_score": 10,
+    "doc_score": 65,
+    "ux_score": 100,
+    "overall": 51,
+    "estimated_coverage": 16.67,
+    "tests_run": 0,
+    "tests_failed": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "test_add(self):\n            self.assertEqual(add(-1, 1), 0)test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual(add(0, 0), 0)test_add(self):\n            self.assertEqual(add(0, 0), 0)test_subtract(self):",
+  "tests": "test_add(self):\n            self.assertEqual(add(-1, 1), 0)test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual(add(2, 3),5)\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual",
+  "docs": "test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assertEqual(add(2, 3),5)\n            self.assertEqual(add(-1, 1), 0)test_subtract(self):\n            self.assertEqual(subtract(-1, 1), 0)test_add(self):\n            self.assert"
+}

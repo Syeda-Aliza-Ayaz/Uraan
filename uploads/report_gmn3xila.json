@@ -1,0 +1,28 @@
+{
+  "filename": "pattern.cpp",
+  "language": "C++",
+  "timestamp": "2025-09-25T12:09:44.629618Z",
+  "scores": {
+    "lines": 16,
+    "comments": 1,
+    "comment_ratio": 6,
+    "complexity": 10,
+    "review_score": 40,
+    "test_score": 1,
+    "doc_score": 13,
+    "ux_score": 100,
+    "overall": 36,
+    "estimated_coverage": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "for ( int i =0; i < n;cin >> n;cin >> n;cin >> n; cin<< \"Enter value of *incin >> n; cin<< \"Enter value of *incin >> n; cin<< \"Enter value of *incin >> n; cin<< \"Enter value of *incin >> n; cin",
+  "tests": "cout << endl;cout << endl;cout << endl;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n;cin >> n",
+  "docs": "cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;cout << endl;"
+}

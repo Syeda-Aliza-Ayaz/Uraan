@@ -1,0 +1,28 @@
+{
+  "filename": "5.cpp",
+  "language": "C++",
+  "timestamp": "2025-09-25T15:53:01.747810Z",
+  "scores": {
+    "lines": 109,
+    "comments": 2,
+    "comment_ratio": 1,
+    "complexity": 100,
+    "review_score": 40,
+    "test_score": 1,
+    "doc_score": 10,
+    "ux_score": 100,
+    "overall": 35,
+    "estimated_coverage": 0
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "(int i = 0; i< col; i++)int i = 0; iint j = 0; j= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j",
+  "tests": "(int i = 0; i< col; i++)int i = 0; iint j = 0; j= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j < col;= 0; j",
+  "docs": "cout << \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"=====<< \"====="
+}

@@ -1,0 +1,198 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="panel upload-panel" role="region" aria-labelledby="upload-heading">
+    <div class="left">
+        <h2 id="upload-heading">Upload source file</h2>
+        <p class="upload-description">Supported extensions: .py, .java</p>
+
+        <form id="uploadForm" role="form" aria-label="File upload form">
+            <label class="filebox" for="fileInput" role="button" tabindex="0" aria-describedby="file-hint">
+                <input id="fileInput" 
+                       name="file" 
+                       type="file" 
+                       accept="{{ allowed }}" 
+                       required 
+                       aria-describedby="file-hint"
+                       aria-label="Select source code file to analyze" />
+                <span id="fileLabel" aria-live="polite">Choose a source file…</span>
+                <span id="file-hint" class="sr-only">Drag and drop a file here or click to browse</span>
+            </label>
+
+            <div class="actions" role="group" aria-label="Form actions">
+                <button id="analyzeBtn" 
+                        type="submit" 
+                        class="btn primary"
+                        aria-describedby="analyze-hint">
+                    <span class="btn-text">Analyze</span>
+                    <span class="btn-loading" style="display: none;">Analyzing...</span>
+                </button>
+                <button id="resetBtn" 
+                        type="button" 
+                        class="btn outline"
+                        aria-label="Reset form and clear all data">
+                    Reset
+                </button>
+            </div>
+
+            <div id="errorMsg" 
+                 class="error" 
+                 role="alert" 
+                 aria-live="assertive" 
+                 style="display:none"
+                 aria-hidden="true">
+            </div>
+        </form>
+
+        <div class="notes" role="complementary" aria-labelledby="targets-heading">
+            <h3 id="targets-heading" class="notes-heading">Quick targets:</h3>
+            <ul role="list">
+                <li>Code Quality Score ≥ 80</li>
+                <li>Estimated Test Coverage ≥ 70%</li>
+                <li>Maintainability Score ≥ 75</li>
+                <li>Readability Score ≥ 80</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="status-card" role="status" aria-live="polite" aria-labelledby="status-heading">
+            <h3 id="status-heading" class="sr-only">Analysis Status</h3>
+            <div class="meter">
+                <!-- animated gear left and circular meter -->
+                <div class="gear" id="gear" aria-hidden="true" role="presentation"></div>
+                <div class="circular" role="img" aria-label="Overall quality score">
+                    <div class="circle-bg" aria-hidden="true"></div>
+                    <div class="circle-fill" id="circleFill" aria-hidden="true"></div>
+                    <div class="circle-text" id="circleText" aria-label="Quality score percentage">--%</div>
+                </div>
+            </div>
+
+            <div class="mini-stats" role="list" aria-label="Analysis metrics">
+                <div role="listitem">
+                    <strong>Quality:</strong> 
+                    <span id="qualityStat" aria-label="Quality score">—</span>
+                </div>
+                <div role="listitem">
+                    <strong>Coverage:</strong> 
+                    <span id="coverageStat" aria-label="Test coverage percentage">—</span>
+                </div>
+                <div role="listitem">
+                    <strong>Level:</strong> 
+                    <span id="qualityLevel" aria-label="Quality level rating">—</span>
+                </div>
+                <div role="listitem">
+                    <strong>Complexity:</strong> 
+                    <span id="timeComplexity" aria-label="Time complexity">—</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="results" style="display:none">
+            <h3>Report</h3>
+
+            <div class="score-grid">
+                <div class="card">
+                    <h4>Code Review Precision</h4>
+                    <div class="bar">
+                        <div id="barReview" class="bar-fill"></div>
+                    </div>
+                    <div class="bar-num" id="numReview">—</div>
+                </div>
+
+                <div class="card">
+                    <h4>Test Generator Reliability</h4>
+                    <div class="bar">
+                        <div id="barTest" class="bar-fill"></div>
+                    </div>
+                    <div class="bar-num" id="numTest">—</div>
+                </div>
+
+                <div class="card">
+                    <h4>Documentation Quality</h4>
+                    <div class="bar">
+                        <div id="barDoc" class="bar-fill"></div>
+                    </div>
+                    <div class="bar-num" id="numDoc">—</div>
+                </div>
+
+                <div class="card">
+                    <h4>User Experience</h4>
+                    <div class="bar">
+                        <div id="barUx" class="bar-fill"></div>
+                    </div>
+                    <div class="bar-num" id="numUx">—</div>
+                </div>
+            </div>
+
+            <div class="enhanced-metrics">
+                <h3>Enhanced Analysis</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>Quality Level</h4>
+                        <div class="metric-value" id="qualityLevelValue">—</div>
+                        <div class="metric-desc">High/Medium/Low classification</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Time Complexity</h4>
+                        <div class="metric-value" id="timeComplexityValue">—</div>
+                        <div class="metric-desc">Algorithmic complexity analysis</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Bug Detection</h4>
+                        <div class="metric-value" id="bugEfficiencyValue">—</div>
+                        <div class="metric-desc">Detection efficiency score</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Bug Severity</h4>
+                        <div class="metric-value" id="bugSeverityValue">—</div>
+                        <div class="metric-desc">High/Medium/Low severity</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enhanced-metrics" id="geminiMetrics" style="display:none;">
+                <h3>Gemini AI Analysis</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>Gemini Quality Score</h4>
+                        <div class="metric-value" id="geminiQualityValue">—</div>
+                        <div class="metric-desc">AI-powered quality assessment</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Maintainability</h4>
+                        <div class="metric-value" id="maintainabilityValue">—</div>
+                        <div class="metric-desc">Code maintainability score</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Readability</h4>
+                        <div class="metric-value" id="readabilityValue">—</div>
+                        <div class="metric-desc">Code readability score</div>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Best Practices</h4>
+                        <div class="metric-value" id="bestPracticesValue">—</div>
+                        <div class="metric-desc">Adherence to best practices</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-block">
+                <h4>Bugs Report</h4>
+                <pre id="bugReportPre"></pre>
+            </div>
+
+            <div class="text-block">
+                <h4>Corrected Code</h4>
+                <pre id="correctedCodePre"></pre>
+            </div>
+
+            <div class="report-actions">
+                <a id="downloadReport" class="btn outline" href="#">Download JSON Report</a>
+                <a id="downloadPdf" class="btn outline" href="#" style="display:none;">Download PDF Report</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

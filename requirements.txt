@@ -1,0 +1,12 @@
+flask
+transformers
+torch
+huggingface_hub
+python-multipart
+coverage
+bandit
+radon
+google-generativeai
+python-dotenv
+reportlab
+weasyprint

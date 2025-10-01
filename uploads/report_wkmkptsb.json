@@ -1,0 +1,54 @@
+{
+  "filename": "AddNumbers.java",
+  "language": "Java",
+  "timestamp": "2025-09-29T08:45:13.785607Z",
+  "scores": {
+    "lines": 8,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 40,
+    "test_score": 3,
+    "doc_score": 10,
+    "ux_score": 100,
+    "overall": 35,
+    "estimated_coverage": 0,
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 0,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 0
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "performance_issues": 0,
+        "syntax_errors": 0,
+        "logic_errors": 0,
+        "runtime_errors": 0,
+        "security_issues": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 0,
+      "severity": "Low"
+    },
+    "quality_level": "Low"
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "public static voidSystem.out.println(\"The sum of+ b + \" is:System.out.println(\"The sum of+ a + \"System.out.println(\"The sum of+ b + \" is:System.out.println(\"The sum of+ a + \" is:System.out.println(\"The sum of+ b + \" is:System.out.println(\"The sum of",
+  "tests": "public static voidSystem.out.println(\"The sum of+ a + \"+ b + \" is:System.out.println(\"The sum of+ a + \"+ b + \" is:System.out.println(\"The sum of+ a + \"+ b);System.out.println(\"The sum of+ b);\n\nSystem.out.println(\"The sum of+ a);\n",
+  "docs": "public static voidSystem.out.println(\"The sum of+ \" ++ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"+ \"",
+  "bug_report": null,
+  "corrected_code": null
+}
