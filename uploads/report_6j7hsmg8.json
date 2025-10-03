@@ -1,0 +1,55 @@
+{
+  "filename": "buggy.java",
+  "language": "Java",
+  "timestamp": "2025-10-03T09:59:33.646939Z",
+  "scores": {
+    "lines": 6,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 60,
+    "test_score": 4,
+    "doc_score": 35,
+    "ux_score": 100,
+    "overall": 48,
+    "estimated_coverage": 0,
+    "structure_score": 20,
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "runtime_errors": 0,
+        "performance_issues": 0,
+        "security_issues": 0,
+        "syntax_errors": 0,
+        "logic_errors": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 60,
+      "severity": "Medium"
+    },
+    "quality_level": "Medium"
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(x))))))System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out",
+  "tests": "public static voidSystem.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out",
+  "docs": "System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(x))))))System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out",
+  "bug_report": null,
+  "corrected_code": "public class BuggyOne {\n    public static void main(String[] args) {\n        int a = 0;\n        int b = 0;\n        int sum = a + b;\n        System.out.println(\"The sum of \" + a + \" + \" + b + \" is: \" + sum);\n    }\n}\n"
+}
