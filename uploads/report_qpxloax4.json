@@ -1,0 +1,55 @@
+{
+  "filename": "buggy.java",
+  "language": "Java",
+  "timestamp": "2025-10-03T12:45:59.185762Z",
+  "scores": {
+    "lines": 6,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 70,
+    "test_score": 30,
+    "doc_score": 100,
+    "ux_score": 95,
+    "overall": 72,
+    "estimated_coverage": 16,
+    "structure_score": 20,
+    "quality_level": "Medium",
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "performance_issues": 0,
+        "syntax_errors": 2,
+        "runtime_errors": 0,
+        "logic_errors": 0,
+        "security_issues": 0
+      },
+      "total_bugs": 2,
+      "detection_efficiency": 59,
+      "severity": "Low"
+    }
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "Basic code structure detected. Potential syntax issues based on compile check. Suggestion: Check semicolons and braces.",
+  "tests": "public static voidSystem.out.println(x); // O(1)System.in.println(); }",
+  "docs": "# API Documentation\n\n## Class BuggyOne\n- **Language**: Java\n\n### main\n- **Parameters**: String[] args\n- **Returns**: Unknown\n\n## Usage\n````\n# Compile and run\njava BuggyOne\n````\n",
+  "bug_report": "System.out.println(...))))))System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out",
+  "corrected_code": null
+}

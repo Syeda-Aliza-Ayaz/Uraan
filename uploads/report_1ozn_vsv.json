@@ -1,0 +1,55 @@
+{
+  "filename": "ConstantTime.java",
+  "language": "Java",
+  "timestamp": "2025-10-03T12:22:26.702504Z",
+  "scores": {
+    "lines": 9,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 70,
+    "test_score": 30,
+    "doc_score": 100,
+    "ux_score": 95,
+    "overall": 72,
+    "estimated_coverage": 22,
+    "structure_score": 22,
+    "quality_level": "Medium",
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "performance_issues": 0,
+        "runtime_errors": 0,
+        "syntax_errors": 0,
+        "logic_errors": 0,
+        "security_issues": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 60,
+      "severity": "Medium"
+    }
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "public static voidSystem.out.println(getFirst(arr));int[] arr = {10, 20,{10,20, 30};\npublic staticint[] arr =; // Always one stepO(1)\n}",
+  "tests": "public static voidSystem.out.println(getFirst(arr));int[] arr = {10,{10, 20, 30};\nint[]= {20, 30,; System . out}public static int getFirst(int[]int[]= {30,1,2,3, 4, 5, 6, 7, 8,} }public staticint [ ] arr =",
+  "docs": "# API Documentation\n\n## Class ConstantTime\n- **Language**: Java\n\n### getFirst\n- **Parameters**: int[] arr\n- **Returns**: Unknown\n\n### main\n- **Parameters**: String[] args\n- **Returns**: Unknown\n\n## Usage\n````\n# Compile and run\njava ConstantTime\n````\n",
+  "bug_report": null,
+  "corrected_code": "public class ConstantTime {\n    public static void main(String[] args) {\n        int a = 0;\n        int b = 0;\n        int sum = a + b;\n        System.out.println(\"The sum of \" + a + \" + \" + b + \" is: \" + sum);\n    }\n}\n"
+}

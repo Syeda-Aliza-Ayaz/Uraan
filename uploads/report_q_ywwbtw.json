@@ -1,0 +1,55 @@
+{
+  "filename": "buggy.java",
+  "language": "Java",
+  "timestamp": "2025-10-03T11:47:52.685460Z",
+  "scores": {
+    "lines": 6,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 60,
+    "test_score": 8,
+    "doc_score": 100,
+    "ux_score": 100,
+    "overall": 65,
+    "estimated_coverage": 15,
+    "structure_score": 20,
+    "quality_level": "Medium",
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "runtime_errors": 0,
+        "logic_errors": 0,
+        "performance_issues": 0,
+        "security_issues": 0,
+        "syntax_errors": 2
+      },
+      "total_bugs": 2,
+      "detection_efficiency": 59,
+      "severity": "Low"
+    }
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "Basic code structure detected. Potential syntax issues based on compile check. Suggestion: Check semicolons and braces.",
+  "tests": "public static voidSystem.out.println(x); // O(1)\n   }",
+  "docs": "# BuggyOne Class Documentation\n\n## Main Method\n- **Description**: Entry point; declares variables and prints output.\n- **Parameters**: String[] args (standard CLI args)\n- **Returns**: void\n\n## Usage\njava BuggyOne",
+  "bug_report": "System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(x))))))System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out.println(System.out",
+  "corrected_code": "public class BuggyOne {\n    public static void main(String[] args) {\n        int a = 0;\n        int b = 0;\n        int sum = a + b;\n        System.out.println(\"The sum of \" + a + \" + \" + b + \" is: \" + sum);\n    }\n}\n"
+}

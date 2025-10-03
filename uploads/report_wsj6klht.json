@@ -1,0 +1,64 @@
+{
+  "filename": "qno1.py",
+  "language": "Python",
+  "timestamp": "2025-10-03T12:36:30.288450Z",
+  "scores": {
+    "lines": 8,
+    "comments": 1,
+    "comment_ratio": 12,
+    "complexity": 5,
+    "review_score": 70,
+    "test_score": 30,
+    "doc_score": 76,
+    "ux_score": 105,
+    "overall": 68,
+    "estimated_coverage": 0.0,
+    "tests_run": 0,
+    "tests_failed": 0,
+    "bandit": {
+      "issue_count": 0,
+      "severity": {}
+    },
+    "radon_cc": {
+      "worst_rank": "A"
+    },
+    "structure_score": 26,
+    "quality_level": "Medium",
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 0,
+        "O(n)": 1,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(n)",
+      "confidence": 75
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "runtime_errors": 0,
+        "security_issues": 0,
+        "logic_errors": 0,
+        "syntax_errors": 0,
+        "performance_issues": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 0,
+      "severity": "Low"
+    }
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": false,
+    "coverage_pass": false
+  },
+  "review": "= [1,2,3,4,5]\nprint(\"Sum:\", sum_of_elements(arr))return total=for num in:( num )). append ( num )",
+  "tests": "= [1,2,3,4,5]\nprint(\"Sum:\", sum_of_elements(arr))[1, 2, 3, 4, 5]1]1]5] # Example usage:1]5]5]6] #1]5]5]5] )",
+  "docs": "1, 2, 3, 4, 5]\nprint(\"Sum:\",3, 5)5]1]2]4]5]5]5] # Example usage:= [1,2,3,4,5]",
+  "bug_report": null,
+  "corrected_code": null
+}

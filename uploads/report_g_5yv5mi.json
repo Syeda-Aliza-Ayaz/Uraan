@@ -1,0 +1,55 @@
+{
+  "filename": "buggy.java",
+  "language": "Java",
+  "timestamp": "2025-10-03T12:08:01.082014Z",
+  "scores": {
+    "lines": 6,
+    "comments": 0,
+    "comment_ratio": 0,
+    "complexity": 0,
+    "review_score": 70,
+    "test_score": 71,
+    "doc_score": 100,
+    "ux_score": 95,
+    "overall": 83,
+    "estimated_coverage": 70,
+    "structure_score": 20,
+    "quality_level": "Medium",
+    "time_complexity": {
+      "patterns": {
+        "O(1)": 1,
+        "O(n)": 0,
+        "O(n\u00b2)": 0,
+        "O(log n)": 0,
+        "O(n log n)": 0
+      },
+      "dominant": "O(1)",
+      "confidence": 70
+    },
+    "bug_analysis": {
+      "bug_categories": {
+        "security_issues": 0,
+        "runtime_errors": 0,
+        "syntax_errors": 0,
+        "performance_issues": 0,
+        "logic_errors": 0
+      },
+      "total_bugs": 0,
+      "detection_efficiency": 60,
+      "severity": "Medium"
+    }
+  },
+  "targets": {
+    "code_quality_target": 80,
+    "coverage_target": 70
+  },
+  "pass_fail": {
+    "code_quality_pass": true,
+    "coverage_pass": true
+  },
+  "review": "voidSystem.out.println(x); // O(1)\n",
+  "tests": "// Placeholder JUnit test\npublic class buggyTest {\n    @Test\n    public void testMain() {\n        // Add assertions for main method\n        assertTrue(true); // Basic pass\n    }\n}",
+  "docs": "# API Documentation\n\n## Class BuggyOne\n- **Language**: Java\n\n### main\n- **Parameters**: String[] args\n- **Returns**: Unknown\n\n## Usage\n````\n# Compile and run\njava BuggyOne\n````\n",
+  "bug_report": null,
+  "corrected_code": "public class BuggyOne {\n    public static void main(String[] args) {\n        int a = 0;\n        int b = 0;\n        int sum = a + b;\n        System.out.println(\"The sum of \" + a + \" + \" + b + \" is: \" + sum);\n    }\n}\n"
+}
